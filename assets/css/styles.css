@@ -36,6 +36,18 @@ section{
     padding: 10px;
 }
 
+.l-side-acab{
+    width: 40%;
+    padding: 10px;
+}
+
+.r-side-acab {
+    width: 60%;
+    /* background-color: #f0c; */
+    padding: 10px;
+}
+
+
 
 body {
     color: #ffee44;
@@ -135,4 +147,63 @@ ol{
 
 .preco{
     color:  #cc0000;
+}
+
+.tabAcad{
+    border: 0 0 6px 0 solid #000;
+    border-collapse: collapse;
+    color: #000;
+    font-family: 'Karla', 'Verdana', 'Ubuntu', sans-serif;
+    background-color: #ffc;
+    font-size: 16px;
+}
+
+.tabAcad th{   
+    border: 2px solid #000;
+    padding: 6px 12px 6px 12px;
+}
+
+
+.tabAcad td{
+    border: 2px solid #000;
+    padding: 6px 12px 6px 12px;
+}
+
+.linTH{
+    color: #EE0;
+    background-color: #666;
+    vertical-align: middle;
+    
+    /* TODO: alinhar texto ao centro */
+    /* TODO: alihar texto no meio */
+}
+
+
+.TabAcad, span{
+    color: red;
+
+}
+.colTH{
+    color: #000;
+    background-color: #aaa;
+    text-align: center;
+
+}
+
+.imgAcab{
+    width: 60px;
+    height: 44px;
+}
+
+.linTD{
+    width: auto;
+}
+
+table,* {
+    width: auto;
+    text-wrap: nowrap;
+}
+
+.colTitle{
+    text-align: center;
 }
