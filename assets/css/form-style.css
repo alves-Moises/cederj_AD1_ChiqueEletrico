@@ -1,0 +1,143 @@
+.divCompras{
+    width: 550px;
+    color: #000;
+    background-color: #ffc;
+    padding: 6px 6px 15px 6px;
+    font-size: 12px;
+    border-top: 20px;
+    border-bottom: 20px;
+    border: 2px solid #000;
+
+    margin-right: auto;
+    margin-left: auto;
+    /* TODO :Centralizar o elemento */
+}
+
+.listaCompras{
+    /* todo :readyonly */
+    width: 210px;
+    height: 180px;
+
+    /* preso ao lado direito do formulario */
+    border-left: auto;
+    border-right: 0;
+
+    margin-top: 2px;
+    margin-left: 10px;
+}
+
+
+/*== pos e tam Elementos form == */
+.colLabSelProd{
+    margin-left: 0;
+    margin-right: auto;
+
+    width: 230px;
+    height: 40px;
+}
+
+.colSelProd{
+    width: 160px;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.linhaProdSel{
+    width: 220px;
+    margin-bottom: 6px;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+
+/* cada elemento aí fica pra um lado.. 
+no final pra dir e no inicio pra esq */
+.elemEsq{
+    display: block;
+
+}
+
+.elemDir{
+    display: block;
+}
+
+.botoes{
+    text-align: right;
+    margin: 20px 10px 0 10px;
+}
+
+
+/* ===== pos fieldsets ===== */
+.fsEsq{
+    float: left;
+    display: inline;
+}
+
+.fsDir{
+    float: right;
+    display: inline;
+}
+
+
+/*== input fields size == */
+.inpGrande{
+    width: 380px;
+}
+
+.inpMedio{
+    width: 80px;
+}
+
+/* cartao de credito */
+.inpNCC{
+    width: 130px;
+}
+
+.inpTelef{
+    width: 90px;
+}
+
+.inpEnder{
+    width: 180px;
+    height: 50px;
+}
+
+.numDD{
+    width: 30px;
+}
+
+.numQD{
+    width: 50px;
+}
+
+
+/* Form elements */
+.divLinha{
+    width: 500px;
+    margin-bottom: 6px;
+}
+
+.colLabCrd{
+    margin-left: 0;
+    margin-right: auto;
+    width: 260px;
+    height: 40px;
+}
+
+.colPri{
+    display: block;
+    float: left;
+    width: 90px;
+}
+
+.colPriCompras{
+    display: block;
+    float: left;
+    width: 86px;
+}
+
+.colPriPag{
+    display: block;
+    float: left;
+    width: 250px;
+}
