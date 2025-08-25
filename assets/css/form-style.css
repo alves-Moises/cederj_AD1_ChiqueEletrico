@@ -100,6 +100,9 @@ no final pra dir e no inicio pra esq */
 .inpEnder{
     width: 180px;
     height: 50px;
+    border: #aaa solid 1px;
+    border-radius: 1px;
+
 }
 
 .numDD{
@@ -140,4 +143,216 @@ no final pra dir e no inicio pra esq */
     display: block;
     float: left;
     width: 250px;
+}
+
+/* ========== */
+.divLabel{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    /* justify-content: space-between; */
+    align-items: start;
+    width: 100%;
+    margin: 0;
+}
+
+.l-side-compras{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.r-side-compras{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.ralfPayment{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-side-payment{
+    display: flex;
+    flex-direction: column;
+    padding-right: 5px;
+}
+
+.r-side-payment{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* background-color: fuchsia; */
+}
+
+.section-title{
+    margin-bottom: 10px;
+    margin-top: -6px;
+    background-color: #ffc;
+    width:78px;
+    padding-left: 2px;
+}
+
+.border-card{
+    display: flex;
+    flex-direction: column;
+    border: 1px black solid;
+    margin-top: 10px;
+    padding: 8px;
+    gap: 10px;
+}
+
+.prod-pay-selection{
+    margin-bottom: 10px;
+    margin-top: -6px;
+    background-color: #ffc;
+    width: 198px;
+    padding-left: 2px;
+}
+
+.half-compras{
+    display: flex;
+    flex-direction: row;
+    text-wrap: nowrap;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+.divLabel>span{
+    width: 100px;
+}
+
+.border-section{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 0px 5px 5px 5px;
+    margin-bottom: 10px;
+}
+
+.gender-title{
+    margin-bottom: 10px;
+    margin-top: -6px;
+    background-color: #ffc;
+    width:44px;
+    padding-left: 2px;
+}
+
+.nasc-title{
+    margin-bottom: 10px;
+    margin-top: -6px;
+    background-color: #ffc;
+    width:70px;
+    padding-left: 2px;
+}
+
+.divLabelGender{
+    gap: 2px;
+}
+
+.genderOptions{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    gap: 10px;
+}
+
+input{
+    border: 1px solid #aaa;
+    border-radius: 3px;
+}
+
+.inputDate{
+    padding: 5px;
+}
+#inptDay{
+    width: 32px;
+}
+
+#inptMonth{
+    width: 32px;
+}
+
+#dayV{
+    width: 32px;
+}
+#yearV{
+    width: 44px;
+}
+
+#card-number{
+    width: 128px;
+    padding: 0 2px
+}
+
+#inptYear{
+    width: 44px;
+}
+
+#buy{
+    padding: 8px; 
+    margin-top: 10px;
+    width: fit-content;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+}
+
+#item-list{
+    height: 200px;
+    width: 200px;
+    border: 1px solid #aaa;
+    float: right;
+
+}
+
+#card-title{
+    margin-top: -16px;
+    background-color: #ffc;
+    width: 40px;
+    padding-left: 2px;
+}
+
+/* #pay_product_selector{
+    display: flex;
+    flex-direction: column;
+} */
+
+#prod_selector{
+    width: 250px;
+    padding: 3px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+#payment_method>option{
+    background-color: #fff;
+}
+
+#value-line{
+    margin:5px;
+    float: right;
+}
+
+#totalValue{
+    width: 100px;
+    background-color: #efefef;
+}
+
+.sendButton{
+    border: 1px solid #aaa;
+    padding:5px 8px;
+    border-radius: 8px;
+}
+
+.catSpan{
+    font-weight: 300;
 }
