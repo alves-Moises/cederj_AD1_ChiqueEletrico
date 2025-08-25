@@ -2,14 +2,17 @@
 <html lang="pt-BR">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Materials - Chique Elétrico</title>
+        <meta 
+            name="viewport" 
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>Pedidos - Chique Elétrico</title>
         <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Sofia"
         />
-        <link rel="stylesheet" href="./assets/css/styles.css" />
         <link rel="stylesheet" href="./assets/css/form-style.css">
+        <link rel="stylesheet" href="./assets/css/styles.css" />
     </head>
 <body>
     <header>
@@ -40,11 +43,363 @@
             <section>
 
                 <div class="divCompras">
-                    <h4 class-form-title>Compras</h4>
-                    <form action="">
+                    <form>
+
+                        <h4 class="form-title title-section">
+                            Compras
+                        </h4>
+                        <div class="border-section">
                         
-                        <p>Identificação</p>
+                            <p class="section-title">Identificação</p>
+                            <div class="divLinha">
+                                <label class="divLabel">
+                                    <span class="fsEsq">
+                                        Nome:
+                                    </span>
+                                    <input 
+                                        type="text" 
+                                        class="fsDir inpGrande"
+                                        name="name"
+                                    >
+                                </label>
+                                <br>
+                                
+                                <label class="divLabel">
+                                    <span class="fsEsq">
+                                        email:
+                                    </span>
+                                    <input 
+                                    type="email"
+                                        class="fsDir inpGrande"
+                                        name="email"
+                                    >
+
+                                </label>
+                            </div>
+
+                            <div class="half-compras">
+                                <div class="l-side-compras">
+                                    <label class="divLabel">
+                                        <span class="fsEsr">
+                                            Endereço:
+                                        </span>
+                                        <textarea 
+                                            type="text" 
+                                            name="adress" 
+                                            class="inpEnder fsDir"
+                                        ></textarea>
+                                        
+                                    </label>
+
+                                    <label class="divLabel">
+                                        <Span class="fsEsq">Telefone</Span>
+                                        <input 
+                                            type="tel"  
+                                            name="tel" 
+                                            id="tel"
+                                            class="fsDir inpTelef"
+                                        >
+                                    </label>
+
+                                    <label class="divLabel">
+                                        <Span class="fsEsq">Celular</Span>
+                                        <input 
+                                            type="tel"  
+                                            name="tel" 
+                                            id="tel"
+                                            class="fsDir inpTelef"
+                                        >
+
+                                    </label>
+                                
+                                </div>
+                                
+                                <div class="r-side-compras">
+                                    <div class="border-section">
+                                        <p class="gender-title">Gênero</p>    
+                                        
+                                        <div class="genderOptions">
+                                            
+                                            <div class="divLabel divLabelGender">
+                                                <input
+                                                    type="radio"
+                                                    name="gender"
+                                                    value="masc"
+                                                >
+                                                <Label for="masc">
+                                                    Mas
+                                                </Label>
+                                            </div>
+
+                                            <div class="divLabel divLabelGender">
+                                                <input
+                                                    type="radio"
+                                                    name="gender"
+                                                    value="fem"
+                                                >
+                                                <Label for="masc">
+                                                    Fem
+                                                </Label>
+                                            </div>
+
+                                            <div class="divLabel divLabelGender">
+                                                <input
+                                                    type="radio"
+                                                    name="gender"
+                                                    value="other"
+                                                >
+                                                <Label for="masc">
+                                                    Outro
+                                                </Label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="border-section">
+                                        <p class="nasc-title">Nascimento</p>
+                                        <div class="divLabel">
+                                            <label>
+                                                <input
+                                                    class="inputDate"
+                                                    id="inptDay"
+                                                    type="number"
+                                                    min="1"
+                                                    max="31"
+                                                >
+                                                /
+                                                <input
+                                                    class="inputDate"
+                                                    id="inptMonth"
+                                                    type="number"
+                                                    min="1"
+                                                    max="12"
+                                                >
+                                                /
+                                                <input
+                                                    class="inputDate"
+                                                    id="inptYear"
+                                                    type="number"
+                                                    min="1900"
+                                                    max="2099"
+                                                >
+
+
+                                            </label>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        
+                        <div 
+                            class="border-section"
+                        >
+                            <p class="prod-pay-selection">
+                                Seleção de Produtos e Pagamento
+                            </p>
+                            <div class="ralfPayment">
+
+                                <div class="left-side-payment">
+                                    <select 
+                                        name="product_selector" 
+                                        id="prod_selector"
+                                        required
+                                    >
+                                        <optgroup 
+                                            disabled 
+                                            label="----"
+                                        >
+                                        </optgroup>
+                                        <optgroup 
+                                            label="Acabamento Stylos"
+                                        >
+                                            <option
+                                                value="placa_4x4_stylos"
+                                            >
+                                                Placa 4x4
+                                                
+                                            </option>
+
+                                            <option 
+                                                value="tomada_stylos"
+                                            >
+                                                Tomada
+                                            </option>
+
+                                            <option 
+                                                value="interruptor_stylos"
+                                            >
+                                                Interruptor
+                                            </option>
+                                        </optgroup>
+
+                                        <optgroup 
+                                            label="Acabamento Slim"
+                                        >
+                                            <option 
+                                                value="placa_4x4_slim"
+                                            >
+                                                Placa 4x4
+                                                
+                                            </option>
+                                            <option 
+                                                value="tomada_slim"
+                                            >
+                                                Tomada
+                                                
+                                            </option>
+                                            <option 
+                                                value="interruptor_slim"
+                                            >
+                                                Interruptor
+                                                
+                                            </option>
+                                        </optgroup>
+
+                                        <optgroup
+                                            label="Cabo Flexível"
+                                        >
+                                            <option
+                                                value="sil_prto_2.5"
+                                            >
+                                                Sil Preto 2,5mm (100m)
+                                            </option>
+
+                                            <option
+                                                value="cobrecom_azul_2.5"
+                                            >
+                                                Cobrecom Azul 2,5mm (100m)
+                                            </option>
+
+                                            <option
+                                                value="sil_verde_2.5"
+                                            >
+                                                Sil verde 2,5mm (50m)
+                                            </option>
+                                        </optgroup>
+
+                                        <optgroup
+                                            label="Terminais Ilhós"
+                                        >
+                                            <option 
+                                                value="2.5_200pc"
+                                            >
+                                                2,5mm (200 peças)
+                                            </option>
+                                            
+                                            <option 
+                                                value="4_100pc"
+                                            >
+                                                4mm (100 peças)
+                                            </option>
+
+                                        </optgroup>
+
+                                        <optgroup
+                                            label="Conduíte"
+                                        >
+                                            <option 
+                                                value="Plastilit_1/2"
+                                            >
+                                                Plastilit 1/2" 25m
+                                            </option>
+
+                                            <option 
+                                                value="Plastilit_3/4"
+                                            >
+                                                Plastilit 3/4" 50m
+                                            </option>
+                                        </optgroup>
+
+                                    </select>
+                                    <button type="submit" id="buy">Comprar</button>
+                                    <div class="border-card">
+                                        <p id="card-title">
+                                            cartão
+                                        </p>
+                                        <p>
+                                            Bandeira: 
+                                            <input
+                                                name="card"
+                                                type="radio"
+                                                value="Visa"
+                                                >
+                                            <label>Visa</label>
+                                            
+                                            <input
+                                                name="card"
+                                                type="radio"
+                                                value="Master"
+                                            >
+                                            <label>Master</label>
+
+                                            <input
+                                                name="card"
+                                                type="radio"
+                                                value="Elo"
+                                            >
+                                            <label>Elo</label>
+
+                                        </p>
+
+                                        <p id="ValidateLine">
+                                            validade: 
+                                            <input
+                                                class="inputDate"
+                                                id="dayV"
+                                                type="number"
+                                                min="1"
+                                                max="31"
+                                            >
+                                            /
+                                            <input
+                                                class="inputDate"
+                                                id="yearV"
+                                                type="number"
+                                                min="1900"
+                                                max="2999"
+                                            >
+                                        </p>
+
+                                        <p>
+                                            Numero:
+                                            <input
+                                                type="number"
+                                                name="card-number"
+                                                id="card-number"
+                                            >
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="r-side-payment">
+                                    <textarea 
+                                        name="item-list" 
+                                        id="item-list"
+                                    ></textarea>
+
+                                    <p id="value-line">
+                                        Valor R$
+                                        <input 
+                                            id="totalValue"
+                                            type="number" 
+                                            readonly
+                                        >
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="botoes">
+                            <button class="sendButton" type="submit">Enviar</button>
+                            <button class="sendButton" type="button">Limpar</button>
+                        </div>
                     </form>
+
                 </div>
             </section>
         </div>
