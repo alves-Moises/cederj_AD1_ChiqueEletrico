@@ -2,15 +2,54 @@
 <html lang="pt-BR">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta 
+            name="viewport" 
+            content="width=device-width, initial-scale=1.0" 
+        />
         <title>Materials - Chique Elétrico</title>
         <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Sofia"
         />
-        <link rel="stylesheet" href="assets/css/styles.css" />
+        <link
+            rel="stylesheet"
+            href="assets/css/modal.css"
+        >
+        <link
+            rel="stylesheet"
+            href="assets/css/styles.css"
+        >
     </head>
     <body>
+        <div 
+            class="modal"
+            id="modal-frame"
+        > 
+            <div class="modal-container">
+
+                <div class="modal-card">
+                    <h3 id="card-cat">Pert</h3>
+                    <p id="card-name">aa</p>
+                    <img
+                        id="product_image"
+                        src="./assets/images/modal-img/CobrecomAzul2p5_150.jpg" 
+                        alt="void"
+                    >
+                    <p id="card-size">
+                        100m
+                    </p>
+                    <p>preco: R$
+                        <span id="price">
+                            123,00  
+                        </span>
+                    </p>
+                    <button id="closeBTN">
+                        Fechar
+                    </button>
+                </div>
+            </div>
+
+        </div>
         <header>
             <img
                 class="imgLogo"
@@ -23,7 +62,9 @@
                 <p>contato@chiqueletrico.com.br</p>
             </div>
         </header>
+        
 
+        </div>
         <div class="container">
             <div class="l-side">
                 <nav class="row-nav">
@@ -38,23 +79,32 @@
 
             <div class="r-side">
                 <section class="row-materials">
-                    <h2 class="title-section">Materiais Elétricos</h2>
+                    <h2 class="title-section">
+                        Materiais Elétricos
+                    </h2>
                     <div class="listMat">
                         <ul>
-                            <li>Cabo Flexível:
+                            <li>
+                                Cabo Flexível:
 
                                 <ol>
-                                    <li>
+                                    <li
+                                        class="product_li"
+                                        id="sil_preto"
+                                    >
                                         Sil Preto 2,5mm 100m 
-                                        (R$<spam class="preco">200,00</spam>)
                                     </li>
-                                    <li>
+                                    <li
+                                        class="product_li"
+                                        id="cobrecom_azul"
+                                    >
                                         Cobrecom Azul 2,5mm 100m 
-                                        (R$<spam class="preco">190,00</spam>)
                                     </li>
-                                    <li>
+                                    <li
+                                        class="product_li"
+                                        id="sil_verde"
+                                    >
                                         Sil verde 2,5mm 50m
-                                        (R$<spam class="preco">150,00</spam>)
                                     </li>
                                 </ol>
                                 
@@ -63,13 +113,17 @@
                             <li>Terminais Ilhós
 
                                 <ol>
-                                    <li>
+                                    <li
+                                        class="product_li"
+                                        id="term_200pc"
+                                    >
                                         2,5mm 200 peças  
-                                        (R$<spam class="preco">30,00</spam>)
                                     </li>
-                                    <li>
+                                    <li
+                                        class="product_li"
+                                        id="term_100pc"
+                                    >
                                         4mm 100 peças
-                                        (R$<spam class="preco">20,00</spam>)
                                     </li>
                                 </ol>
                                 
@@ -78,13 +132,17 @@
                             <li>Conduíte:
 
                                 <ol>
-                                    <li>
+                                    <li
+                                        class="product_li"
+                                        id="cond_25m"
+                                    >
                                         1/2" 25m
-                                        (R$<spam class="preco">50,00</spam>)
                                     </li>
-                                    <li>
+                                    <li
+                                        class="product_li"
+                                        id="cond_50m"
+                                    >
                                         3/4" 50m
-                                        (R$<spam class="preco">100,00</spam>)
                                     </li>
                                 </ol>
                                 
@@ -94,5 +152,10 @@
                 </section>
             </div>
         </div>
+        <script 
+            src="./assets/js/modalScript.js"
+        >
+
+        </script>
     </body>
 </html>
