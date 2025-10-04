@@ -1,0 +1,30 @@
+.itemLink{
+    cursor: pointer;
+    color: #303030
+}
+.itemLink:hover{
+    color: #2222d3;
+}
+
+.itemCell{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px 5px;
+    margin: 0;
+    width: 150px;
+    height: 250px;
+    gap: 5px;
+}
+
+
+
+
+#prod_img{
+    display: none;
+}
+
+#prod_price{
+    color: red
+}
