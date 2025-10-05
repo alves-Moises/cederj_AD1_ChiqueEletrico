@@ -102,11 +102,15 @@
                                     </label>
 
                                     <label class="divLabel">
-                                        <Span class="fsEsq">Celular</Span>
+                                        <Span 
+                                            class="fsEsq"
+                                        >
+                                            Celular
+                                        </Span>
                                         <input 
                                             type="tel"  
                                             name="tel" 
-                                            id="tel"
+                                            id="cel"
                                             class="fsDir inpTelef"
                                         >
 
@@ -142,7 +146,9 @@
                                                 </Label>
                                             </div>
 
-                                            <div class="divLabel divLabelGender">
+                                            <div 
+                                                class="divLabel divLabelGender"
+                                            >
                                                 <input
                                                     type="radio"
                                                     name="gender"
@@ -209,51 +215,57 @@
                                         id="prod_selector"
                                         required
                                     >
-                                        <optgroup 
+                                        <optgroup
                                             disabled 
                                             label="----"
                                         >
                                         </optgroup>
-                                        <optgroup 
+                                        <optgroup
                                             label="Acabamento Stylos"
                                         >
                                             <option
                                                 value="placa_4x4_stylos"
+                                                id="placa_4x4_stylos"
                                             >
                                                 Placa 4x4
                                                 
                                             </option>
 
-                                            <option 
+                                            <option
                                                 value="tomada_stylos"
+                                                id="tomada_stylos"
                                             >
                                                 Tomada
                                             </option>
 
-                                            <option 
+                                            <option
                                                 value="interruptor_stylos"
+                                                id="interruptor_stylos"
                                             >
                                                 Interruptor
                                             </option>
                                         </optgroup>
 
-                                        <optgroup 
+                                        <optgroup
                                             label="Acabamento Slim"
                                         >
-                                            <option 
+                                            <option
                                                 value="placa_4x4_slim"
+                                                id="placa_4x4_slim"
                                             >
                                                 Placa 4x4
                                                 
                                             </option>
-                                            <option 
+                                            <option
                                                 value="tomada_slim"
+                                                id="tomada_slim"
                                             >
                                                 Tomada
                                                 
                                             </option>
-                                            <option 
+                                            <option
                                                 value="interruptor_slim"
+                                                id="interruptor_slim"
                                             >
                                                 Interruptor
                                                 
@@ -264,19 +276,22 @@
                                             label="Cabo Flexível"
                                         >
                                             <option
-                                                value="sil_prto_2.5"
+                                                value="sil_preto_2.5"
+                                                id="sil_preto_2.5"
                                             >
                                                 Sil Preto 2,5mm (100m)
                                             </option>
 
                                             <option
                                                 value="cobrecom_azul_2.5"
+                                                id="cobrecom_azul_2.5"
                                             >
                                                 Cobrecom Azul 2,5mm (100m)
                                             </option>
 
                                             <option
                                                 value="sil_verde_2.5"
+                                                id="sil_verde_2.5"
                                             >
                                                 Sil verde 2,5mm (50m)
                                             </option>
@@ -285,14 +300,16 @@
                                         <optgroup
                                             label="Terminais Ilhós"
                                         >
-                                            <option 
+                                            <option
                                                 value="2.5_200pc"
+                                                id="2.5_200pc"
                                             >
                                                 2,5mm (200 peças)
                                             </option>
                                             
-                                            <option 
+                                            <option
                                                 value="4_100pc"
+                                                id="4_100pc"
                                             >
                                                 4mm (100 peças)
                                             </option>
@@ -302,14 +319,16 @@
                                         <optgroup
                                             label="Conduíte"
                                         >
-                                            <option 
+                                            <option
                                                 value="Plastilit_1/2"
+                                                id="Plastilit_1/2"
                                             >
                                                 Plastilit 1/2" 25m
                                             </option>
 
-                                            <option 
+                                            <option
                                                 value="Plastilit_3/4"
+                                                id="Plastilit_3/4"
                                             >
                                                 Plastilit 3/4" 50m
                                             </option>
@@ -317,7 +336,7 @@
 
                                     </select>
                                     <button 
-                                        type="submit" 
+                                        type="button" 
                                         id="buy"
                                     >
                                         Comprar
@@ -334,21 +353,27 @@
                                                 type="radio"
                                                 value="Visa"
                                                 >
-                                            <label>Visa</label>
+                                            <label>
+                                                Visa
+                                            </label>
                                             
                                             <input
                                                 name="card"
                                                 type="radio"
                                                 value="Master"
                                             >
-                                            <label>Master</label>
+                                            <label>
+                                                Master
+                                            </label>
 
                                             <input
                                                 name="card"
                                                 type="radio"
                                                 value="Elo"
                                             >
-                                            <label>Elo</label>
+                                            <label>
+                                                Elo
+                                            </label>
 
                                         </p>
 
@@ -388,12 +413,15 @@
                                         id="item-list"
                                     ></textarea>
 
-                                    <p id="value-line">
+                                    <p 
+                                        id="value-line"
+                                    >
                                         Valor R$
                                         <input 
                                             id="totalValue"
                                             type="number" 
-                                            readonly
+                                            value="0"
+                                            disabled
                                         >
                                     </p>
                                 </div>
@@ -404,13 +432,14 @@
                             <button
                                 class="sendButton"
                                 type="submit"
+                                id="submit"
                             >
                                 Enviar
                             </button>
                             
                             <button 
                                 class="sendButton"
-                                type="button"
+                                type="reset"
                             >
                                 Limpar
                             </button>
@@ -421,6 +450,12 @@
             </section>
         </div>
     </div>
+
+    <script 
+        src="./assets/js/form.js"
+    >
+
+    </script>
 
 </body>
 </html>
