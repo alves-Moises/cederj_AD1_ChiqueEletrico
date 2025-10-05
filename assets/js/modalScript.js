@@ -2,7 +2,6 @@ var item = document.querySelectorAll(".product_li")
 var closeBTN = document.getElementById("closeBTN")
 
 closeBTN.addEventListener("click", close_card)
-// term.addEventListener("click", () => {alert("asd")})
 item.forEach(product => {
     console.log(
         Object.keys(product)
