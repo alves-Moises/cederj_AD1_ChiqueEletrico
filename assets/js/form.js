@@ -69,9 +69,7 @@ function verfify_number_fields(){
     NumbLenErr("Celular", 9, cel)
 }
 
-function add_item(item){
 
-}
 
 
 
