@@ -215,11 +215,13 @@
                                         id="prod_selector"
                                         required
                                     >
-                                        <optgroup
-                                            disabled 
-                                            label="----"
+                                        <option 
+                                            selected
+                                            disabled
+                                            id="disabledOPT"
                                         >
-                                        </optgroup>
+                                            ----
+                                        </option>
                                         <optgroup
                                             label="Acabamento Stylos"
                                         >
@@ -407,7 +409,9 @@
                                     </div>
                                 </div>
 
-                                <div class="r-side-payment">
+                                <div 
+                                    class="r-side-payment"
+                                >
                                     <textarea 
                                         name="item-list" 
                                         id="item-list"
