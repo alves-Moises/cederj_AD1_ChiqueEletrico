@@ -15,6 +15,10 @@ addBTN.addEventListener("click", () => {
     const selected = select.options[select.selectedIndex]
     const ID = selected.id
     const value = selected.value
+    if(ID=="disabledOPT"){
+        alert("Nenhum Produto Selecionado!")
+        return
+    }
     
     
     totalValue.innerHTML 
